@@ -1,0 +1,50 @@
+2023-07-13 21:36:03: ./create_newcase --case /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans --res ELM_USRDAT --mach cades --compiler gnu --compset I20TRCNPRDCTCBC --project ccsi
+ ---------------------------------------------------
+2023-07-13 21:36:03: Compset longname is 20TR_DATM%QIA_ELM%CNPRDCTCBC_SICE_SOCN_MOSART_SGLC_SWAV_SIAC_SESP
+ ---------------------------------------------------
+2023-07-13 21:36:03: Compset specification file is /home/tyr/E3SM_code/components/elm/cime_config/config_compsets.xml
+ ---------------------------------------------------
+2023-07-13 21:36:03: Pes     specification file is /home/tyr/E3SM_code/components/elm/cime_config/config_pes.xml
+ ---------------------------------------------------
+2023-07-13 21:36:03: Forcing is 
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component CPL is Historical 1850 to 2000 transient:
+ ---------------------------------------------------
+2023-07-13 21:36:03: Using None coupler instances
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component ATM is  Data driven ATM  QIAN data set 
+ ---------------------------------------------------
+2023-07-13 21:36:03: ATM_GRID is ELM_USRDAT
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component LND is clm4.5 physics:clm4.5 cn:alm1.0 C-N-P, nutirent competition via relative demand, ctc soil cascade with black carbon deposition:
+ ---------------------------------------------------
+2023-07-13 21:36:03: LND_GRID is ELM_USRDAT
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component ICE is Stub ice component
+ ---------------------------------------------------
+2023-07-13 21:36:03: ICE_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component OCN is Stub ocn component
+ ---------------------------------------------------
+2023-07-13 21:36:03: OCN_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component ROF is MOSART:
+ ---------------------------------------------------
+2023-07-13 21:36:03: ROF_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component GLC is Stub glacier (land ice) component
+ ---------------------------------------------------
+2023-07-13 21:36:03: GLC_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component WAV is Stub wave component
+ ---------------------------------------------------
+2023-07-13 21:36:03: WAV_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component IAC is Stub iac component
+ ---------------------------------------------------
+2023-07-13 21:36:03: IAC_GRID is null
+ ---------------------------------------------------
+2023-07-13 21:36:03: Component ESP is Stub external system processing (ESP) component
+ ---------------------------------------------------
+2023-07-13 21:36:03: ESP_GRID is None
+ ---------------------------------------------------

@@ -1,0 +1,15 @@
+&comp_inparm 
+
+hist_mfilt = 1
+
+hist_nhtfrq = 0
+
+suplphos = 'NONE'
+
+flanduse_timeseries = ''
+
+fsurdat = '/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/surfdata_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc'
+
+finidat = '/lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Test_4/run/US_LA2_Test_4.elm.r.0101-01-01-00000.nc'
+
+/ 

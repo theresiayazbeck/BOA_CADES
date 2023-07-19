@@ -1,0 +1,43 @@
+
+optimization_options:
+  objective_options:
+    objectives:
+      - name: rmse
+        boa_metric: RootMeanSquaredError
+    outcome_constraints: []
+  scheduler:
+    total_trials: 12
+  experiment:
+    name: 'US_LA2_Trans'
+    start_year: 2012
+    start_month: 1
+    end_year: 2013
+    end_month: 12
+    model_var: 'GPP'
+    var_to_read: ['GPP']
+    obs_var: 'GPP_PI_F'
+    obs2mod_unit_conv: -0.000012
+  output_dir: '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/'
+  input_dir: '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptInput/'
+  obsfile: '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptInput/Obs_LA2_2012.csv'
+  config_file:
+    name: 'US_LA2_Trans_optimization_config.yml'
+  generation_strategy:
+    steps:
+      - model: SOBOL
+        num_trials: 5
+        min_trials_observed: 5
+      - model: GPEI
+        num_trials: -1
+        max_parallelism: 2
+
+model_options:
+  create_case_dir: '/home/tyr/E3SM_code/cime/scripts/'
+  working_dir: '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/'
+  run_dir: '/lustre/or-scratch/cades-ccsi/scratch/tyr/'
+
+parameters:
+  vcmax_np1:
+    type: range
+    bounds: [0.5,5.0]
+    value_type: float

@@ -1,0 +1,33 @@
+&datm_nml
+  decomp = "1d"
+  factorfn = "null"
+  force_prognostic_true = .false.
+  iradsw = 1
+  presaero = .true.
+  restfilm = "undefined"
+  restfils = "undefined"
+  wiso_datm = .false.
+/
+&shr_strdata_nml
+  datamode = "CLMNCEP"
+  domainfile = "/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc"
+  dtlimit = 1.5, 1.5, 1.5, 1.5, 1.5, 1.5
+  fillalgo = "nn", "nn", "nn", "nn", "nn", "nn"
+  fillmask = "nomask", "nomask", "nomask", "nomask", "nomask", "nomask"
+  fillread = "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET"
+  fillwrite = "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET"
+  mapalgo = "bilinear", "bilinear", "bilinear", "bilinear", "bilinear", "nn"
+  mapmask = "nomask", "nomask", "nomask", "nomask", "nomask", "nomask"
+  mapread = "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET"
+  mapwrite = "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET", "NOT_SET"
+  readmode = "single", "single", "single", "single", "single", "single"
+  streams = "datm.streams.txt.CLM_QIAN.Solar 1950 1950 1970",
+      "datm.streams.txt.CLM_QIAN.Precip 1950 1950 1970",
+      "datm.streams.txt.CLM_QIAN.TPQW 1950 1950 1970",
+      "datm.streams.txt.presaero.trans_1850-2000 1849 1849 2006",
+      "datm.streams.txt.topo.observed 1 1 1",
+      "datm.streams.txt.co2tseries.20tr 1850 1850 2007"
+  taxmode = "cycle", "cycle", "cycle", "cycle", "cycle", "extend"
+  tintalgo = "coszen", "nearest", "linear", "linear", "lower", "linear"
+  vectors = "null"
+/

@@ -1,0 +1,12 @@
+stream_fldfilename_lightng = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc
+paramfile = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/paramdata/clm_params.cbgc.c07292018.nc
+fatmlndfrc = /home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2//domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc
+finidat = /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Test_4/run/US_LA2_Test_4.elm.r.0101-01-01-00000.nc
+fsurdat = /home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/surfdata_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc
+fsnowoptics = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_mam_c160322.nc
+fsoilordercon = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/paramdata/CNP_parameters_c180312.nc
+fsnowaging = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc
+stream_fldfilename_pdep = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/pdepdata/fpdep_clm_hist_simyr2000_1.9x2.5_c150929.nc
+stream_fldfilename_ndep = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/ndepdata/fndep_elm_cbgc_exp_simyr1849-2101_1.9x2.5_c190103.nc
+flanduse_timeseries = 
+stream_fldfilename_popdens = /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/firedata/elmforc.ssp5_hdm_0.5x0.5_simyr1850-2100_c190109.nc

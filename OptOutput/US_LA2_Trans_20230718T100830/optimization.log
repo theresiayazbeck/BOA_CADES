@@ -1,0 +1,28 @@
+INFO 2023-07-18 10:08:30,275 - Start time: 20230718T100830
+INFO 2023-07-18 10:08:30,315 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T100830/000000
+INFO 2023-07-18 10:08:32,024 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T100830/000001
+INFO 2023-07-18 10:08:33,743 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T100830/000002
+INFO 2023-07-18 10:08:35,445 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T100830/000003
+INFO 2023-07-18 10:08:37,137 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T100830/000004
+ERROR 2023-07-18 10:08:38,676 - Boa Wrapper encountered Exception: AttributeError("'ELMWrapper' object has no attribute '_metric_properties'") in _fetch_trial_data
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 357, in _fetch_trial_data
+    trial=trial, metric_properties=self._metric_properties, metric_name=metric_name, *args, **kwargs
+AttributeError: 'ELMWrapper' object has no attribute '_metric_properties'
+ERROR 2023-07-18 10:08:38,677 - Boa Wrapper encountered Exception: AttributeError("'ELMWrapper' object has no attribute '_metric_properties'") in _fetch_trial_data
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 357, in _fetch_trial_data
+    trial=trial, metric_properties=self._metric_properties, metric_name=metric_name, *args, **kwargs
+AttributeError: 'ELMWrapper' object has no attribute '_metric_properties'

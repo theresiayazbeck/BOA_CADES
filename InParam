@@ -1,0 +1,30 @@
+./xmlchange --file env_run.xml --id ELM_BLDNML_OPTS --val "-bgc bgc -nutrient cnp -nutrient_comp_pathway eca -soil_decomp century"
+
+./xmlchange --file env_run.xml --id RUN_STARTDATE --val 2012-01-01
+./xmlchange --file env_run.xml --id  DATM_CLMNCEP_YR_ALIGN --val 1950
+./xmlchange --file env_run.xml --id  DATM_CLMNCEP_YR_START --val 1950
+./xmlchange --file env_run.xml --id  DATM_CLMNCEP_YR_END --val 1970
+./xmlchange --file env_run.xml --id ATM_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc
+./xmlchange --file env_run.xml --id LND_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc
+
+./xmlchange --file env_run.xml ATM_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/
+./xmlchange --file env_run.xml LND_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/
+
+cat <<EOF > ./user_nl_elm
+hist_mfilt = 24
+hist_nhtfrq = 1
+suplphos = 'NONE'
+flanduse_timeseries = ''
+fsurdat = '/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/surfdata_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc'
+finidat = '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptInput/US_LA2_Trans.elm.r.2012-01-01-00000.nc'
+paramfile = '/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptInput/clm_params.cbgc.c07292018.nc'
+EOF
+
+cat <<EOF > ./user_nl_mosart
+do_rtm = .false.
+EOF
+
+./xmlchange --file env_run.xml --id STOP_OPTION --val nyears
+./xmlchange --file env_run.xml --id REST_N --val 1
+./xmlchange --file env_run.xml --id STOP_N --val 2
+./xmlchange --file env_workflow.xml JOB_WALLCLOCK_TIME=01:00:00

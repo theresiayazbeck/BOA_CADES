@@ -1,0 +1,7 @@
+&mosart_inparm
+ do_rtm = .false.
+/
+&wrm_inparm
+/
+&inund_inparm
+/

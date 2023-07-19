@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<file id="env_mach_specific.xml" version="2.0">
+  <header>
+    These variables control the machine dependent environment including
+    the paths to compilers and libraries external to cime such as netcdf,
+    environment variables for use in the running job should also be set	here.
+    </header>
+  <group id="compliant_values">
+    <entry id="run_exe" value="${EXEROOT}/e3sm.exe ">
+      <type>char</type>
+      <desc>executable name</desc>
+    </entry>
+    <entry id="run_misc_suffix" value=" &gt;&gt; e3sm.log.$LID 2&gt;&amp;1 ">
+      <type>char</type>
+      <desc>redirect for job output</desc>
+    </entry>
+  </group>
+  <module_system type="module">
+    <init_path lang="sh">/usr/share/Modules/init/sh</init_path>
+    <init_path lang="csh">/usr/share/Modules/init/csh</init_path>
+    <init_path lang="perl">/usr/share/Modules/init/perl.pm</init_path>
+    <init_path lang="python">/usr/share/Modules/init/python.py</init_path>
+    <cmd_path lang="sh">module</cmd_path>
+    <cmd_path lang="csh">module</cmd_path>
+    <cmd_path lang="perl">/usr/bin/modulecmd perl</cmd_path>
+    <cmd_path lang="python">/usr/bin/modulecmd python</cmd_path>
+    <modules>
+      <command name="purge"/>
+    </modules>
+    <modules compiler="gnu">
+      <command name="load">PE-gnu</command>
+      <command name="load">perl</command>
+      <command name="load">mkl/2018.1.163</command>
+      <command name="load">cmake/3.20.3</command>
+      <command name="load">python/3.6.3</command>
+    </modules>
+    <modules compiler="gnu" mpilib="mpi-serial">
+      <command name="load">netcdf/4.3.3.1</command>
+      <command name="load">pnetcdf/1.9.0</command>
+    </modules>
+    <modules compiler="gnu" mpilib="openmpi">
+      <command name="load">hdf5-parallel/1.8.17</command>
+      <command name="load">netcdf-hdf5parallel/4.3.3.1</command>
+      <command name="load">pnetcdf/1.9.0</command>
+    </modules>
+    <modules compiler="gnu" mpilib="openmpi3">
+      <command name="switch">gcc/6.3.0</command>
+      <command name="switch">openmpi/3.0.0</command>
+    </modules>
+  </module_system>
+  <environment_variables compiler="gnu" mpilib="openmpi">
+    <env name="PETSC_PATH">/software/user_tools/current/cades-ccsi/petsc-x/openmpi-1.10-gcc-5.3</env>
+  </environment_variables>
+  <environment_variables compiler="gnu" mpilib="openmpi3">
+    <env name="PETSC_PATH">$ENV{AMANZI_TPLS_DIR}/petsc-3.13</env>
+  </environment_variables>
+  <environment_variables compiler="gnu" mpilib="!mpi-serial">
+    <env name="HDF5_PATH">$ENV{HDF5_PATH}</env>
+    <env name="NETCDF_PATH">$ENV{NETCDF_PATH}</env>
+    <env name="NETCDF_C_PATH">$ENV{NETCDF_PATH}</env>
+    <env name="NETCDF_FORTRAN_PATH">$ENV{NETCDF_PATH}</env>
+    <env name="PNETCDF_PATH">$ENV{PNETCDF_PATH}</env>
+    <env name="LAPACK_LIBDIR">$ENV{BLASLAPACK_LIBDIR}</env>
+    <env name="PERL5LIB">/software/dev_tools/swtree/cs400_centos7.2_pe2016-08/perl/5.30.1/centos7.2_gnu5.3.0/lib/perl5/</env>
+  </environment_variables>
+  <environment_variables compiler="gnu" mpilib="mpi-serial">
+    <env name="NETCDF_PATH">/software/dev_tools/swtree/cs400/netcdf/4.3.3.1/centos7.2_gnu5.3.0/</env>
+    <env name="NETCDF_C_PATH">/software/dev_tools/swtree/cs400/netcdf/4.3.3.1/centos7.2_gnu5.3.0/</env>
+    <env name="NETCDF_FORTRAN_PATH">/software/dev_tools/swtree/cs400/netcdf/4.3.3.1/centos7.2_gnu5.3.0/</env>
+    <env name="PNETCDF_PATH">$ENV{PNETCDF_PATH}</env>
+    <env name="LAPACK_LIBDIR">$ENV{BLASLAPACK_LIBDIR}</env>
+    <env name="PERL5LIB">/software/dev_tools/swtree/cs400_centos7.2_pe2016-08/perl/5.30.1/centos7.2_gnu5.3.0/lib/perl5/</env>
+  </environment_variables>
+  <mpirun compiler="gnu" mpilib="openmpi">
+    <executable>mpirun</executable>
+    <arguments>
+      <arg name="num_tasks"> -np {{ total_tasks }}</arg>
+    </arguments>
+  </mpirun>
+  <mpirun compiler="gnu" mpilib="openmpi3">
+    <executable>mpirun</executable>
+    <arguments>
+      <arg name="num_tasks"> -np {{ total_tasks }}</arg>
+    </arguments>
+  </mpirun>
+  <mpirun mpilib="mpi-serial">
+    <executable> </executable>
+  </mpirun>
+</file>

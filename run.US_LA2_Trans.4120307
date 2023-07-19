@@ -1,0 +1,49 @@
+2023-07-13 21:44:54 CASE.RUN BEGINS HERE
+2023-07-13 21:44:54 RUN_MODEL BEGINS HERE
+2023-07-13 21:44:54 PRE_RUN_CHECK BEGINS HERE
+2023-07-13 21:44:54 NAMELIST CREATION BEGINS HERE
+Generating namelists for /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans
+  2023-07-13 21:44:54 atm 
+Create namelist for component datm
+   Calling /home/tyr/E3SM_code/components/data_comps/datm/cime_config/buildnml
+  2023-07-13 21:44:54 lnd 
+Create namelist for component elm
+   Calling /home/tyr/E3SM_code/components/elm/cime_config/buildnml
+  2023-07-13 21:44:55 ice 
+Create namelist for component sice
+   Calling /home/tyr/E3SM_code/components/stub_comps/sice/cime_config/buildnml
+  2023-07-13 21:44:55 ocn 
+Create namelist for component socn
+   Calling /home/tyr/E3SM_code/components/stub_comps/socn/cime_config/buildnml
+  2023-07-13 21:44:55 rof 
+Create namelist for component mosart
+   Calling /home/tyr/E3SM_code/components/mosart//cime_config/buildnml
+  2023-07-13 21:44:55 glc 
+Create namelist for component sglc
+   Calling /home/tyr/E3SM_code/components/stub_comps/sglc/cime_config/buildnml
+  2023-07-13 21:44:55 wav 
+Create namelist for component swav
+   Calling /home/tyr/E3SM_code/components/stub_comps/swav/cime_config/buildnml
+  2023-07-13 21:44:55 iac 
+Create namelist for component siac
+   Calling /home/tyr/E3SM_code/components/stub_comps/siac/cime_config/buildnml
+  2023-07-13 21:44:55 esp 
+Create namelist for component sesp
+   Calling /home/tyr/E3SM_code/components/stub_comps/sesp/cime_config/buildnml
+  2023-07-13 21:44:55 cpl 
+Create namelist for component drv
+   Calling /home/tyr/E3SM_code/driver-mct/cime_config/buildnml
+2023-07-13 21:44:55 NAMELIST CREATION HAS FINISHED
+-------------------------------------------------------------------------
+ - Prestage required restarts into /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/run
+ - Case input data directory (DIN_LOC_ROOT) is /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+2023-07-13 21:44:55 PRE_RUN_CHECK HAS FINISHED
+run command is    /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/bld/e3sm.exe   >> e3sm.log.$LID 2>&1  
+2023-07-13 21:44:55 SAVE_PRERUN_PROVENANCE BEGINS HERE
+Deprecated "arg" node detected in /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/env_batch.xml, check files /home/tyr/E3SM_code/cime_config/machines/config_batch.xml
+Deprecated "arg" node detected in /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/env_batch.xml, check files /home/tyr/E3SM_code/cime_config/machines/config_batch.xml
+2023-07-13 21:44:56 SAVE_PRERUN_PROVENANCE HAS FINISHED
+2023-07-13 21:44:56 MODEL EXECUTION BEGINS HERE
+slurmstepd: error: *** JOB 4120307 ON or-condo-c290 CANCELLED AT 2023-07-13T21:46:25 ***

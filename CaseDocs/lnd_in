@@ -1,0 +1,98 @@
+&elm_inparm
+ albice = 0.60,0.40
+ co2_type = 'diagnostic'
+ create_crop_landunit = .false.
+ do_budgets = .true.
+ dtime = 1800
+ fatmlndfrc = '/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2//domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc'
+ finidat = '/lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Test_4/run/US_LA2_Test_4.elm.r.0101-01-01-00000.nc'
+ fsnowaging = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
+ fsnowoptics = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/snicardata/snicar_optics_5bnd_mam_c160322.nc'
+ fsoilordercon = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/paramdata/CNP_parameters_c180312.nc'
+ fsurdat = '/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/surfdata_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc'
+ hist_mfilt = 1
+ hist_nhtfrq = 0
+ maxpatch_glcmec = 0
+ maxpatch_pft = 17
+ more_vertlayers = .false.
+ nfix_ptase_plant = .true.
+ nsegspc = 20
+ nu_com = 'ECA'
+ paramfile = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/paramdata/clm_params.cbgc.c07292018.nc'
+ spinup_state = 0
+ suplnitro = 'NONE'
+ suplphos = 'NONE'
+ urban_hac = 'ON'
+ urban_traffic = .false.
+ use_century_decomp = .true.
+ use_cn = .true.
+ use_crop = .false.
+ use_dynroot = .false.
+ use_fates = .false.
+ use_lch4 = .true.
+ use_snicar_ad = .true.
+ use_vertsoilc = .true.
+/
+&ndepdyn_nml
+ model_year_align_ndep = 1850
+ ndepmapalgo = 'bilinear'
+ stream_fldfilename_ndep = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/ndepdata/fndep_elm_cbgc_exp_simyr1849-2101_1.9x2.5_c190103.nc'
+ stream_year_first_ndep = 1850
+ stream_year_last_ndep = 2005
+/
+&pdepdyn_nml
+ model_year_align_pdep = 2000
+ pdepmapalgo = 'bilinear'
+ stream_fldfilename_pdep = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/pdepdata/fpdep_clm_hist_simyr2000_1.9x2.5_c150929.nc'
+ stream_year_first_pdep = 2000
+ stream_year_last_pdep = 2000
+/
+&popd_streams
+ model_year_align_popdens = 1850
+ popdensmapalgo = 'bilinear'
+ stream_fldfilename_popdens = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/lnd/clm2/firedata/elmforc.ssp5_hdm_0.5x0.5_simyr1850-2100_c190109.nc'
+ stream_year_first_popdens = 1850
+ stream_year_last_popdens = 2010
+/
+&light_streams
+ lightngmapalgo = 'bilinear'
+ stream_fldfilename_lightng = '/lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata/atm/datm7/NASA_LIS/clmforc.Li_2012_climo1995-2011.T62.lnfm_Total_c140423.nc'
+ stream_year_first_lightng = 0001
+ stream_year_last_lightng = 0001
+/
+&lai_streams
+/
+&elm_canopyhydrology_inparm
+/
+&elm_soilhydrology_inparm
+/
+&dynamic_subgrid
+ flanduse_timeseries = ''
+/
+&finidat_consistency_checks
+/
+&dynpft_consistency_checks
+/
+&elmu_inparm
+/
+&elm_soilstate_inparm
+/
+&elm_pflotran_inparm
+/
+&betr_inparm
+/
+&elm_mosart
+ lnd_rof_coupling_nstep = 6
+/
+&ch4par_in
+ fin_use_fsat = .true.
+ use_aereoxid_prog = .true.
+/
+&elm_humanindex_inparm
+/
+!#--------------------------------------------------------------------------------------------------------------------------
+!# lnd_in:: Comment:
+!# This namelist was created using the following command-line:
+!#     /home/tyr/E3SM_code/components/elm/bld/CLM build-namelist -infile /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/Buildconf/elmconf/namelist -csmdata /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata -inputdata /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/Buildconf/elm.input_data_list -ignore_ic_year -namelist  &elm_inparm  start_ymd=18510101  / -use_case 20thC_transient -res UNSET -clm_usr_name UNSET -clm_start_type default -envxml_dir /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans -l_ncpl 48 -r_ncpl 8 -lnd_frac /home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2//domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc -glc_nec 0 -co2_ppmv 367.0 -co2_type diagnostic -ncpl_base_period day -config /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/Buildconf/elmconf/config_cache.xml -bgc bgc -nutrient cnp -nutrient_comp_pathway eca -soil_decomp century
+!# For help on options use: /home/tyr/E3SM_code/components/elm/bld/CLM build-namelist -help
+!#--------------------------------------------------------------------------------------------------------------------------

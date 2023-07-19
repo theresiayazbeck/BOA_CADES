@@ -1,0 +1,84 @@
+2023-07-13 21:38:58: xmlchange success <command> ./xmlchange --file env_run.xml --id ELM_BLDNML_OPTS --val -bgc bgc -nutrient cnp -nutrient_comp_pathway eca -soil_decomp century  </command>
+ ---------------------------------------------------
+2023-07-13 21:38:58: xmlchange success <command> ./xmlchange --file env_run.xml --id RUN_STARTDATE --val 1851-01-01  </command>
+ ---------------------------------------------------
+2023-07-13 21:38:59: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_ALIGN --val 1950  </command>
+ ---------------------------------------------------
+2023-07-13 21:38:59: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_START --val 1950  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:00: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_END --val 1970  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:00: xmlchange success <command> ./xmlchange --file env_run.xml --id ATM_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:01: xmlchange success <command> ./xmlchange --file env_run.xml --id LND_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:01: xmlchange success <command> ./xmlchange --file env_run.xml ATM_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:02: xmlchange success <command> ./xmlchange --file env_run.xml LND_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:02: xmlchange success <command> ./xmlchange --file env_run.xml --id STOP_OPTION --val nyears  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:02: xmlchange success <command> ./xmlchange --file env_run.xml --id REST_N --val 1  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:03: xmlchange success <command> ./xmlchange --file env_run.xml --id STOP_N --val 173  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:03: xmlchange success <command> ./xmlchange --file env_workflow.xml JOB_WALLCLOCK_TIME=00:05:00  </command>
+ ---------------------------------------------------
+2023-07-13 21:39:13: case.setup starting 
+ ---------------------------------------------------
+2023-07-13 21:39:15: case.setup success 
+ ---------------------------------------------------
+2023-07-13 21:39:23: build.clean starting 
+ ---------------------------------------------------
+2023-07-13 21:39:23: build.clean success 
+ ---------------------------------------------------
+2023-07-13 21:39:27: case.build starting 
+ ---------------------------------------------------
+2023-07-13 21:44:41: case.build success 
+ ---------------------------------------------------
+2023-07-13 21:44:52: case.submit starting 4120307
+ ---------------------------------------------------
+2023-07-13 21:44:52: case.submit success 4120307
+ ---------------------------------------------------
+2023-07-13 21:44:54: case.run starting 4120307
+ ---------------------------------------------------
+2023-07-13 21:44:56: model execution starting 4120307
+ ---------------------------------------------------
+2023-07-13 21:46:52: xmlchange success <command> ./xmlchange --file env_run.xml --id ELM_BLDNML_OPTS --val -bgc bgc -nutrient cnp -nutrient_comp_pathway eca -soil_decomp century  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:52: xmlchange success <command> ./xmlchange --file env_run.xml --id RUN_STARTDATE --val 1851-01-01  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:52: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_ALIGN --val 1950  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:53: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_START --val 1950  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:53: xmlchange success <command> ./xmlchange --file env_run.xml --id DATM_CLMNCEP_YR_END --val 1970  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:54: xmlchange success <command> ./xmlchange --file env_run.xml --id ATM_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:54: xmlchange success <command> ./xmlchange --file env_run.xml --id LND_DOMAIN_FILE --val domain_sparse_grids_US_LA2_Veg_C3Gra_c230315.nc  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:54: xmlchange success <command> ./xmlchange --file env_run.xml ATM_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:55: xmlchange success <command> ./xmlchange --file env_run.xml LND_DOMAIN_PATH=/home/tyr/E3SM_code/components/elm/tools/OLMT/CasesInputData/US_LA2/  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:55: xmlchange success <command> ./xmlchange --file env_run.xml --id STOP_OPTION --val nyears  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:56: xmlchange success <command> ./xmlchange --file env_run.xml --id REST_N --val 1  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:56: xmlchange success <command> ./xmlchange --file env_run.xml --id STOP_N --val 173  </command>
+ ---------------------------------------------------
+2023-07-13 21:46:56: xmlchange success <command> ./xmlchange --file env_workflow.xml JOB_WALLCLOCK_TIME=10:00:00  </command>
+ ---------------------------------------------------
+2023-07-13 21:47:03: case.submit starting 4120309
+ ---------------------------------------------------
+2023-07-13 21:47:03: case.submit success 4120309
+ ---------------------------------------------------
+2023-07-13 21:47:04: case.run starting 4120309
+ ---------------------------------------------------
+2023-07-13 21:47:08: model execution starting 4120309
+ ---------------------------------------------------
+2023-07-14 01:16:26: model execution success 4120309
+ ---------------------------------------------------
+2023-07-14 01:16:26: case.run success 4120309
+ ---------------------------------------------------

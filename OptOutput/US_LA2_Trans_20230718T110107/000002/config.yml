@@ -1,0 +1,6 @@
+model_options:
+  create_case_dir: /home/tyr/E3SM_code/cime/scripts/
+  run_dir: /lustre/or-scratch/cades-ccsi/scratch/tyr/
+  working_dir: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/
+parameters:
+  vcmax_np1: 0.6354382741264999

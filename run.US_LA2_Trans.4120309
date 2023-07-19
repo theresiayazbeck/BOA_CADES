@@ -1,0 +1,62 @@
+2023-07-13 21:47:04 CASE.RUN BEGINS HERE
+2023-07-13 21:47:04 RUN_MODEL BEGINS HERE
+2023-07-13 21:47:04 PRE_RUN_CHECK BEGINS HERE
+2023-07-13 21:47:05 NAMELIST CREATION BEGINS HERE
+Generating namelists for /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans
+  2023-07-13 21:47:06 atm 
+Create namelist for component datm
+   Calling /home/tyr/E3SM_code/components/data_comps/datm/cime_config/buildnml
+  2023-07-13 21:47:06 lnd 
+Create namelist for component elm
+   Calling /home/tyr/E3SM_code/components/elm/cime_config/buildnml
+  2023-07-13 21:47:07 ice 
+Create namelist for component sice
+   Calling /home/tyr/E3SM_code/components/stub_comps/sice/cime_config/buildnml
+  2023-07-13 21:47:07 ocn 
+Create namelist for component socn
+   Calling /home/tyr/E3SM_code/components/stub_comps/socn/cime_config/buildnml
+  2023-07-13 21:47:07 rof 
+Create namelist for component mosart
+   Calling /home/tyr/E3SM_code/components/mosart//cime_config/buildnml
+  2023-07-13 21:47:07 glc 
+Create namelist for component sglc
+   Calling /home/tyr/E3SM_code/components/stub_comps/sglc/cime_config/buildnml
+  2023-07-13 21:47:07 wav 
+Create namelist for component swav
+   Calling /home/tyr/E3SM_code/components/stub_comps/swav/cime_config/buildnml
+  2023-07-13 21:47:07 iac 
+Create namelist for component siac
+   Calling /home/tyr/E3SM_code/components/stub_comps/siac/cime_config/buildnml
+  2023-07-13 21:47:07 esp 
+Create namelist for component sesp
+   Calling /home/tyr/E3SM_code/components/stub_comps/sesp/cime_config/buildnml
+  2023-07-13 21:47:07 cpl 
+Create namelist for component drv
+   Calling /home/tyr/E3SM_code/driver-mct/cime_config/buildnml
+2023-07-13 21:47:08 NAMELIST CREATION HAS FINISHED
+-------------------------------------------------------------------------
+ - Prestage required restarts into /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/run
+ - Case input data directory (DIN_LOC_ROOT) is /lustre/or-scratch/cades-ccsi/proj-shared/project_acme/e3sm_inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+2023-07-13 21:47:08 PRE_RUN_CHECK HAS FINISHED
+run command is    /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/bld/e3sm.exe   >> e3sm.log.$LID 2>&1  
+2023-07-13 21:47:08 SAVE_PRERUN_PROVENANCE BEGINS HERE
+Deprecated "arg" node detected in /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/env_batch.xml, check files /home/tyr/E3SM_code/cime_config/machines/config_batch.xml
+Deprecated "arg" node detected in /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/env_batch.xml, check files /home/tyr/E3SM_code/cime_config/machines/config_batch.xml
+2023-07-13 21:47:08 SAVE_PRERUN_PROVENANCE HAS FINISHED
+2023-07-13 21:47:08 MODEL EXECUTION BEGINS HERE
+2023-07-14 01:16:26 MODEL EXECUTION HAS FINISHED
+2023-07-14 01:16:26 POST_RUN_CHECK BEGINS HERE
+cpl_logfile /lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/run/cpl.log.4120309.230713-214704
+2023-07-14 01:16:26 POST_RUN_CHECK HAS FINISHED
+2023-07-14 01:16:26 RUN_MODEL HAS FINISHED
+2023-07-14 01:16:26 GET_TIMING BEGINS HERE
+2023-07-14 01:16:27 GET_TIMING HAS FINISHED
+2023-07-14 01:17:08 SAVE_POSTRUN_PROVENANCE BEGINS HERE
+2023-07-14 01:17:11 SAVE_POSTRUN_PROVENANCE HAS FINISHED
+check for resubmit
+dout_s False 
+mach cades 
+resubmit_num 0
+2023-07-14 01:17:11 CASE.RUN HAS FINISHED

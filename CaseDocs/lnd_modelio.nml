@@ -1,0 +1,13 @@
+&modelio
+  diri = "/lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/bld/lnd"
+  diro = "/lustre/or-scratch/cades-ccsi/scratch/tyr/US_LA2_Trans/run"
+  logfile = "lnd.log.4120309.230713-214704"
+/
+&pio_inparm
+  pio_netcdf_format = "64bit_offset"
+  pio_numiotasks = -99
+  pio_rearranger = 1
+  pio_root = 0
+  pio_stride = 32
+  pio_typename = "netcdf"
+/

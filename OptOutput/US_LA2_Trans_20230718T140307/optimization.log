@@ -1,0 +1,36 @@
+INFO 2023-07-18 14:03:07,397 - Start time: 20230718T140307
+INFO 2023-07-18 14:03:07,617 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000000
+INFO 2023-07-18 14:03:24,235 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000001
+INFO 2023-07-18 14:03:38,994 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000002
+INFO 2023-07-18 14:03:54,253 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000003
+INFO 2023-07-18 14:04:10,454 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000004
+ERROR 2023-07-18 14:29:27,450 - Object <elm_wrapper.ELMWrapper object at 0x2b3ddcbad1b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 14:29:27,459 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
+INFO 2023-07-18 14:29:27,556 - Saved optimization parametrization and objective to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/optimization.csv`.
+INFO 2023-07-18 14:29:27,577 - Trials so far: 5
+Running trials: 3, 4
+Will Produce next trials from generation step: Sobol
+Best trial so far: {1: {'rmse': 2.3627464549098683e-09}}
+ERROR 2023-07-18 14:30:19,196 - Object <elm_wrapper.ELMWrapper object at 0x2b3ddcbad1b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 14:30:19,204 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
+INFO 2023-07-18 14:30:19,227 - Saved optimization parametrization and objective to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/optimization.csv`.
+INFO 2023-07-18 14:30:19,245 - Trials so far: 5
+Running trials: 4
+Will Produce next trials from generation step: Sobol
+Best trial so far: {1: {'rmse': 2.3627464549098683e-09}}
+ERROR 2023-07-18 14:40:43,683 - Object <elm_wrapper.ELMWrapper object at 0x2b3ddcbad1b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 14:40:43,691 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
+INFO 2023-07-18 14:40:43,712 - Saved optimization parametrization and objective to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/optimization.csv`.
+INFO 2023-07-18 14:40:43,726 - Trials so far: 5
+Running trials: 
+Will Produce next trials from generation step: Sobol
+Best trial so far: {4: {'rmse': 2.328380036391873e-09}}
+INFO 2023-07-18 14:41:01,443 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000005
+INFO 2023-07-18 14:46:10,946 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000006
+INFO 2023-07-18 14:54:39,428 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000007
+INFO 2023-07-18 14:59:08,355 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000008
+INFO 2023-07-18 15:04:25,514 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000009
+INFO 2023-07-18 15:08:26,003 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T140307/000010

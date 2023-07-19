@@ -1,0 +1,55 @@
+INFO 2023-07-18 11:29:51,268 - Start time: 20230718T112951
+INFO 2023-07-18 11:29:51,433 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T112951/000000
+INFO 2023-07-18 11:29:53,243 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T112951/000001
+INFO 2023-07-18 11:29:54,930 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T112951/000002
+INFO 2023-07-18 11:29:56,773 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T112951/000003
+INFO 2023-07-18 11:29:58,593 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T112951/000004
+ERROR 2023-07-18 11:30:00,541 - Boa Wrapper encountered Exception: ValueError('could not broadcast input array from shape (24,1) into shape (0,1)') in fetch_trial_data
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 430, in fetch_trial_data
+    y_pred, y_true = get_model_obs(
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 233, in get_model_obs
+    modelVar[i:i+24] = CurDayVar
+ValueError: could not broadcast input array from shape (24,1) into shape (0,1)
+ERROR 2023-07-18 11:30:00,544 - Boa Wrapper encountered Exception: ValueError('could not broadcast input array from shape (24,1) into shape (0,1)') in _fetch_trial_data
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 356, in _fetch_trial_data
+    res = self.fetch_trial_data(
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 430, in fetch_trial_data
+    y_pred, y_true = get_model_obs(
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 233, in get_model_obs
+    modelVar[i:i+24] = CurDayVar
+ValueError: could not broadcast input array from shape (24,1) into shape (0,1)
+ERROR 2023-07-18 11:30:00,545 - Boa Wrapper encountered Exception: ValueError('could not broadcast input array from shape (24,1) into shape (0,1)') in _fetch_trial_data
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 356, in _fetch_trial_data
+    res = self.fetch_trial_data(
+  File "/home/tyr/BOA/boa/metaclasses.py", line 31, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/BOA/boa/wrappers/wrapper_utils.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 430, in fetch_trial_data
+    y_pred, y_true = get_model_obs(
+  File "/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/elm_wrapper.py", line 233, in get_model_obs
+    modelVar[i:i+24] = CurDayVar
+ValueError: could not broadcast input array from shape (24,1) into shape (0,1)

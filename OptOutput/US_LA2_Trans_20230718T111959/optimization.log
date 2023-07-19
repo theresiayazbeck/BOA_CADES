@@ -1,0 +1,67 @@
+INFO 2023-07-18 11:19:59,161 - Start time: 20230718T111959
+INFO 2023-07-18 11:19:59,283 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T111959/000000
+INFO 2023-07-18 11:20:01,073 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T111959/000001
+INFO 2023-07-18 11:20:01,863 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T111959/000002
+INFO 2023-07-18 11:20:03,656 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T111959/000003
+INFO 2023-07-18 11:20:04,503 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T111959/000004
+ERROR 2023-07-18 11:24:24,051 - Object <elm_wrapper.ELMWrapper object at 0x2ba6437651b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+ERROR 2023-07-18 11:24:24,052 - failed to save scheduler to json! Reason: AttributeError("'ELMWrapper' object has no attribute '_working_dir'")
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/storage.py", line 107, in scheduler_to_json_snapshot
+    wrapper_serialization = object_to_json(
+  File "/home/tyr/.conda/envs/boa_env_cades/lib/python3.10/site-packages/ax/storage/json_store/encoder.py", line 185, in object_to_json
+    raise JSONEncodeError(err)
+ax.exceptions.storage.JSONEncodeError: Object <elm_wrapper.ELMWrapper object at 0x2ba6437651b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/scheduler.py", line 216, in save_data
+    dump_scheduler_data(scheduler=self, dir_=self.runner.wrapper.experiment_dir, **kwargs)
+  File "/home/tyr/BOA/boa/storage.py", line 257, in dump_scheduler_data
+    scheduler_to_json_file(scheduler, **kwargs)
+  File "/home/tyr/BOA/boa/storage.py", line 59, in scheduler_to_json_file
+    file.write(json.dumps(scheduler_to_json_snapshot(scheduler)))
+  File "/home/tyr/BOA/boa/storage.py", line 114, in scheduler_to_json_snapshot
+    wrapper_serialization = scheduler.experiment.runner.wrapper.to_dict()
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 490, in to_dict
+    working_dir=self.working_dir,
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 127, in working_dir
+    return self._working_dir
+AttributeError: 'ELMWrapper' object has no attribute '_working_dir'
+INFO 2023-07-18 11:24:24,073 - Trials so far: 5
+Running trials: 
+Will Produce next trials from generation step: Sobol
+Best trial so far: {0: {'rmse': 2.2574396453623754e-09}}
+ERROR 2023-07-18 11:24:24,074 - Object <elm_wrapper.ELMWrapper object at 0x2ba6437651b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+ERROR 2023-07-18 11:24:24,074 - failed to save scheduler to json! Reason: AttributeError("'ELMWrapper' object has no attribute '_working_dir'")
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/storage.py", line 107, in scheduler_to_json_snapshot
+    wrapper_serialization = object_to_json(
+  File "/home/tyr/.conda/envs/boa_env_cades/lib/python3.10/site-packages/ax/storage/json_store/encoder.py", line 185, in object_to_json
+    raise JSONEncodeError(err)
+ax.exceptions.storage.JSONEncodeError: Object <elm_wrapper.ELMWrapper object at 0x2ba6437651b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tyr/BOA/boa/scheduler.py", line 216, in save_data
+    dump_scheduler_data(scheduler=self, dir_=self.runner.wrapper.experiment_dir, **kwargs)
+  File "/home/tyr/BOA/boa/storage.py", line 257, in dump_scheduler_data
+    scheduler_to_json_file(scheduler, **kwargs)
+  File "/home/tyr/BOA/boa/storage.py", line 59, in scheduler_to_json_file
+    file.write(json.dumps(scheduler_to_json_snapshot(scheduler)))
+  File "/home/tyr/BOA/boa/storage.py", line 114, in scheduler_to_json_snapshot
+    wrapper_serialization = scheduler.experiment.runner.wrapper.to_dict()
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 490, in to_dict
+    working_dir=self.working_dir,
+  File "/home/tyr/BOA/boa/wrappers/base_wrapper.py", line 127, in working_dir
+    return self._working_dir
+AttributeError: 'ELMWrapper' object has no attribute '_working_dir'
+INFO 2023-07-18 11:24:24,088 - Trials so far: 5
+Running trials: 
+Will Produce next trials from generation step: Sobol
+Best trial so far: {0: {'rmse': 2.2574396453623754e-09}}
+INFO 2023-07-18 11:24:24,089 - 
+Trials completed! Total run time: 264
+ERROR 2023-07-18 11:24:24,090 - Object <elm_wrapper.ELMWrapper object at 0x2ba6437651b0> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.

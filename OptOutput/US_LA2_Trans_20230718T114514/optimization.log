@@ -1,0 +1,27 @@
+INFO 2023-07-18 11:45:14,564 - Start time: 20230718T114514
+INFO 2023-07-18 11:45:14,783 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/000000
+INFO 2023-07-18 11:45:15,383 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/000001
+INFO 2023-07-18 11:45:17,043 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/000002
+INFO 2023-07-18 11:45:18,713 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/000003
+INFO 2023-07-18 11:45:20,335 - Trial directory made: /home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/000004
+ERROR 2023-07-18 11:45:26,257 - Object <elm_wrapper.ELMWrapper object at 0x2ae984955300> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 11:45:26,269 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
+INFO 2023-07-18 11:45:26,294 - Saved optimization parametrization and objective to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/optimization.csv`.
+INFO 2023-07-18 11:45:26,309 - Trials so far: 5
+Running trials: 
+Will Produce next trials from generation step: Sobol
+Best trial so far: {0: {'rmse': 9.366929003892366e-10}}
+ERROR 2023-07-18 11:45:26,311 - Object <elm_wrapper.ELMWrapper object at 0x2ae984955300> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 11:45:26,318 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
+INFO 2023-07-18 11:45:26,340 - Saved optimization parametrization and objective to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/optimization.csv`.
+INFO 2023-07-18 11:45:26,354 - Trials so far: 5
+Running trials: 
+Will Produce next trials from generation step: Sobol
+Best trial so far: {0: {'rmse': 9.366929003892366e-10}}
+INFO 2023-07-18 11:45:26,355 - 
+Trials completed! Total run time: 11
+ERROR 2023-07-18 11:45:26,355 - Object <elm_wrapper.ELMWrapper object at 0x2ae984955300> passed to `object_to_json` (of type <class 'elm_wrapper.ELMWrapper'>, module: elm_wrapper) is not registered with a corresponding encoder in ENCODER_REGISTRY.
+INFO 2023-07-18 11:45:26,367 - Saved JSON-serialized state of optimization to `/home/tyr/E3SM_code/components/elm/tools/OLMT/Cases/US_LA2_Trans/OptOutput/US_LA2_Trans_20230718T114514/scheduler.json`.
+Boa version: 0.8.7.dev10+g6c7df70.d20230717
